@@ -1,0 +1,123 @@
+.container {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* FIX ALIGNMENT */
+.controls {
+    /* border:1px solid; */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;   
+  margin: 20px 0 30px;
+}
+h1{
+  color: #a1a9bc;
+}
+
+.input {
+  padding: 5px;
+  padding-left:19px;
+  height: 34px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #e0e2e7;
+
+}
+
+/* REMOVE FOCUS BORDER */
+.input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* BUTTON SIZE IMPROVED */
+.btn {
+  padding: 6px 12px;
+  height: 34px;
+  border-radius: 6px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+}
+
+/* SEARCH BUTTON BIGGER */
+.search-btn {
+  padding: 6px 18px;
+}
+
+/* CATEGORY */
+.category {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.chip {
+    /* border:1px solid; */
+  padding: 8px 15px;
+  background: #1e293b;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.chip.active {
+  background: #38bdf8;
+}
+
+/* GRID */
+.grid {
+    /* border:1px solid; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* MODAL */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+}
+.no-data {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  color: gray;
+}
